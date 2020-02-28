@@ -79,6 +79,7 @@ h1{ /* h est une balise de titre et le nombre permet plusieur caractéristiques 
     display: flex;
     flex-direction: column;
     align-items: center;    /* aligne les items au centre de la page */
+    height: auto;
 }
 .main-plandusite a{     /* Propriétés du text des liens dans plan du site */
     font-size: calc(.8em + 1.5vw);
