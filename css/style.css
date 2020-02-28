@@ -237,10 +237,13 @@ a:active{  /* Le text du bouton devient vert pendant le clique */
    #   Media Queries   #    Adaptivité du contenu du site pour différent format
    ===================== */
    @media (min-width:320px){ /* smartphones, iPhone, portrait 480x320 */
+    .wrapper{  /* Dispose du aside à droite des deux autres divisions contenue dans celle-ci */
+        display: flex;
+        flex-direction: column;
+    }
     
     .main-container aside,
     .main-container article{
-       
         width: 100%;   /* Réduit les division sur une colone en prenant 100% de la largeur */
      }
      nav ul{     /* Aligne le menu sur une seul colone*/
