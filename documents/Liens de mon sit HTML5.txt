@@ -1,0 +1,30 @@
+
+/mp3/
+httpslasonotheque.orgdetail-0229-clavier-d-ordinateur.html
+
+/video/
+https://www.w3schools.com/html/html_youtube.asp
+
+
+
+/link/
+https://www.wikihow.com/Create-an-Email-Link-in-HTML
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image
+
+https://stackoverflow.com/questions/33721836/removing-underlining-from-image-link
+
+/footer/
+https://stackoverflow.com/questions/3115515/adjust-footer-based-on-content
+
+/a propos/
+https://www.combustible.ca/2015/09/comment-rediger-une-bonne-page-a-propos-pour-votre-site-web/
+
+/switch/
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
+
+https://colostate.instructure.com/courses/8952/pages/float-text-around-images
+
+
+
+/Image free or right/
+https://www.flickr.com/photos/artepilpilean/14649548990

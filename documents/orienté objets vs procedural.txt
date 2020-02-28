@@ -1,0 +1,75 @@
+OBJETS
+
+La programmation orientée objet (POO), ou programmation par objet, est un paradigme de programmation informatique élaboré par les Norvégiens Ole-Johan Dahl et Kristen Nygaard au début des années 1960 et poursuivi par les travaux de l'Américain Alan Kay dans les années 1970. Il consiste en la définition et l'interaction de briques logicielles appelées objets ; un objet représente un concept, une idée ou toute entité du monde physique, comme une voiture, une personne ou encore une page d'un livre. Il possède une structure interne et un comportement, et il sait interagir avec ses pairs. Il s'agit donc de représenter ces objets et leurs relations ; l'interaction entre les objets via leurs relations permet de concevoir et réaliser les fonctionnalités attendues, de mieux résoudre le ou les problèmes. Dès lors, l'étape de modélisation revêt une importance majeure et nécessaire pour la POO. C'est elle qui permet de transcrire les éléments du réel sous forme virtuelle.
+
+Orthogonalement à la programmation par objet, afin de faciliter le processus d'élaboration d'un programme, existent des méthodologies de développement logiciel objet, dont la plus connue est le processus unifié (« Unified Software Development Process » en anglais), qui utilisent des langages de modélisation tels que le Unified Modeling Language (UML).
+
+Même s'il est possible de concevoir par objets une application informatique sans utiliser des outils logiciels dédiés, ces derniers facilitent de beaucoup la conception, la maintenance, et la productivité. On en distingue plusieurs sortes :
+
+les langages de programmation (Java, C#, VB.NET, Vala, Objective C, Eiffel, Python, Ruby, C++, Ada, PHP, Smalltalk, LOGO, AS3, Haxe…) ;
+les outils de modélisation qui permettent de concevoir sous forme de schémas semi-formels la structure d'un programme (Objecteering, UMLDraw, Rhapsody, DBDesigner…) ;
+les bus distribués (DCOM, CORBA, RMI, Pyro…) ;
+les ateliers de génie logiciel ou AGL (Visual Studio pour des langages Dotnet, NetBeans ou Eclipse pour le langage Java).
+Il existe actuellement deux grandes catégories de langages à objets :
+
+les langages à classes, que ceux-ci soient sous forme fonctionnelle (Common Lisp Object System), impérative (C++, Java) ou les deux (Python, OCaml) ;
+les langages à prototypes (JavaScript).
+
+
+
+
+
+PROCEDURAL
+
+En informatique, la programmation procédurale est un paradigme qui se fonde sur le concept d'appel procédural.
+
+Une procédure, aussi appelée routine, sous-routine ou fonction (à ne pas confondre avec les fonctions de la programmation fonctionnelle reposant sur des fonctions mathématiques), contient simplement une série d'étapes à réaliser. N'importe quelle procédure peut être appelée à n'importe quelle étape de l'exécution du programme, y compris à l'intérieur d'autres procédures, voire dans la procédure elle-même (récursivité).
+
+
+Sommaire
+1	Avantages
+2	Procédures et modularité
+3	Apport supplémentaire de la programmation objet
+4	Langages procéduraux
+Avantages
+La programmation procédurale est un meilleur choix qu'une simple programmation séquentielle. Les avantages sont en effet les suivants :
+
+la possibilité de réutiliser le même code à différents emplacements dans le programme sans avoir à le retaper (factorisation), ce qui a pour effet la réduction de la taille du code source et un gain en localité des modifications, donc une amélioration de la maintenabilité (compréhension plus rapide, réduction du risque de régression) ;
+une façon plus simple de suivre l'exécution du programme : la programmation procédurale permet de se passer d'instructions telles que goto, évitant ainsi bien souvent de se retrouver avec un programme compliqué qui part dans toutes les directions (appelé souvent « programmation spaghetti[réf. nécessaire] ») ; cependant, la programmation procédurale permet les « effets de bord », c'est-à-dire la possibilité pour une procédure qui prend des arguments de modifier des variables extérieures à la procédure auxquelles elle a accès (variables de contexte plus global que la procédure).
+Procédures et modularité
+La modularité est une caractéristique souhaitable pour un programme ou une application informatique, et consiste en le découpage du programme ou de l'application en unités sans effet de bord entre elles, c'est-à-dire dont le fonctionnement et le résultat renvoyé au module appelant ne dépend que des paramètres explicitement passés en argument (unités fonctionnelles). Un module est un ensemble de structure de données et de procédures, dont l'effet de bord est confiné à cet ensemble de données.
+
+De ce fait, un module offre un service. Un module peut avoir un contexte d'exécution différent de celui du code appelant : on parle alors de RPC (Remote Procedure Call) si ce contexte est un autre ordinateur, ou de communication inter-processus (légers ou système) s'il s'agit du même ordinateur. Lorsque la transmission des données ne se fait pas en mémoire mais par fichiers, les modules qui communiquent peuvent être compilés séparément et un script doit assurer l'enchainement des appels.
+
+On constate qu'il n'est pas contre-indiqué pour une procédure d'accéder en lecture et en écriture à des variables de contexte plus global (celui d'un module) : cela permet une réduction essentielle du nombre d'arguments passés, mais au détriment de la réutilisation telle quelle dans d'autres contextes d'une procédure. C'est le module en entier qui est réutilisable.
+
+Du fait de leur comportement sans effet de bord, chaque module peut être développé par une personne ou un groupe de personnes distinct de ceux qui développent d'autres modules. Les bibliothèques sont des modules. À noter que pour qu'une procédure puisse être considérée comme se comportant comme une « fonction pure » mathématique, il faut que la valeur de son résultat renvoyé au programme appelant prenne toujours la même valeur pour chaque valeur des arguments. Il faut donc qu'elle ne dépende pas d'une variable globale statique éventuelle du module, statique au sens qu'elle garde sa valeur après la fin de l'invocation du module (par une de ses procédures).
+
+Apport supplémentaire de la programmation objet
+La programmation objet et générique permet une mutualisation et une unicité de l'information et des traitements/procédures/méthodes (en théorie). En identifiant les variables globales à un module à une structure au sens C ou Pascal et à un type utilisateur, ces modules deviennent par définition des « classes » dont l'instanciation correspond à l'instanciation d'un type composé (une structure C ou Pascal).
+
+De plus, par le jeu du polymorphisme et de la généricité, les méthodes d'une classe, qui correspondent exactement aux procédures du module correspondant, en confiant l'effet de bord aux attributs de cette classe, peuvent accepter des arguments dont le type est variable (d'une manière contrôlée par le graphe d'héritage). De ce fait, la programmation objet va plus loin dans la factorisation des traitements que la programmation procédurale (en prolongeant celle-ci), et permet de répondre bien mieux à des besoins où des traitements similaires sont attendus dans des endroits différents d'une solution. Dans une programmation objet aboutie, les « procédures d'aiguillage » (routage de traitements en fonction du type d'une variable passée en argument) sont reléguées au compilateur par utilisation de la liaison dynamique. Le code source s'en trouve aussi réduit.
+
+Langages procéduraux
+Le plus vieil exemple de ce type de langage est l'ALGOL. D'autres exemples sont Fortran, PL/I, Modula-2 et Ada (dans sa première version).
+
+Abal
+Ada
+Algol
+BASIC
+C
+ColdFusion
+COBOL
+Forth
+Fortran
+Modula-2
+Oberon et Oberon-2
+Pascal
+Perl
+PHP (version 4 et inférieur)
+PL/C
+PL/I
+PL/SQL
+Rapira
+VBScript
+W-Langage

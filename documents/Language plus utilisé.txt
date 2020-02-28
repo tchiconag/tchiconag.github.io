@@ -1,0 +1,55 @@
+Alors, qu’est-ce que ça donne? Voici le top 20 des langages les plus populaires!
+1.JavaScript
+
+2. Java
+
+3. Python
+
+4. PHP
+
+5. C#
+
+6. C++
+
+7. CSS
+
+8. Ruby
+
+9. C
+
+10. Objective-C
+
+11. Swift
+
+12. TypeScript
+
+13. Scala
+
+14. Shell
+
+15. Go
+
+16. R
+
+17. PowerShell
+
+18. Perl
+
+19. Haskell
+
+20. Kotlin
+
+Et sur Espresso-Jobs?
+Nous nous sommes amusés à trouver les langages de programmation de cette liste les plus demandés dans les offres d’emplois en web et en TI disponibles sur Espresso-Jobs.
+
+Voici notre top 5 :
+
+1.JavaScript
+
+2. CSS
+
+3. PHP
+
+4. Python
+
+5. C#

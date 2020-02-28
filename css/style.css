@@ -1,0 +1,318 @@
+*{ 
+box-sizing: border-box	/* inclus la marge et la bordure dans tous le code */
+}*
+body{   /* le body contient tous les elements de ce document HTML*/
+    margin: 0;  /* Pas de marge pour le body */
+}
+header{    /* Le Header est une division qui contient les éléments de l'en-tête */
+    display: flex;  /* Permet de creer facilement des elements qui s'ajuste au dimension et disposition */
+    justify-content: center;   /* Centre les elements dans les éléments parents */ 
+    flex-direction: column;   /* Faits une seul colone */
+    width: 100%;   /* Largeur du Header */
+}
+h1{ /* h est une balise de titre et le nombre permet plusieur caractéristiques à différents titre */
+    font-size: calc(1em + 5vw); /* Font-size change la grosseur du text */
+    color: white;   /* Color fait référance à la couleur du text */
+    display: flex;
+    justify-content: center;    /* Justifie le contenu */
+    /* Les em sont relatif à la taille réelle de l'élément */
+    margin-bottom: 0em; /* marge du bas de h1 à 0 */
+}
+.header-container{     /* le point représente une classe, qui permet de partager des caractéristiques au différentes div */
+    border-bottom: 20px solid #e44d26;  /* ajoute une bordure de au bas du Header */
+}
+/* ==========================
+       Mixe .containers
+========================== */
+.footer-container, /* cette formulation associe plusieur class */
+.main aside{
+    border-top: 20px solid #e44d26;     /* Bordure orange au haut pied de page et de la division "aside" */
+}
+.header-container,
+.footer-container,
+.main aside{
+    background: #f16529;    /* La couleur de fond de ces trois division est orange */
+}
+/* ======================
+       Main container
+====================== */
+.main{     /* Dans toutes les pages, dans le main */
+    padding: 2em; /* espace autour du contenu du main, cré la bande blache autour des 3 div du main */ 
+}
+.main article{ /* Pour descendre le titre de l'article au niveau du titre de aside et plus de blanc au dessus */
+    padding-top: 1%;
+    padding-right: 2%;
+}
+.main article h2{  /* Grosseur de titre des articles */
+    font-size: calc(.8em + 2vw);    /* calc est un clacul de valeur de propriété, ratio  du text, pas plus petit que .8em et pas plus que 2 view port */
+}
+.main aside h3{ /* taille du titre de la division aside */
+    font-size: calc(.8em + 2vw);
+}
+.main p{  /* Grosseur du text des articles */
+    font-size: calc(.8em + 1.5vw);  /* Grosseur du text des articles plus petit que les titres */
+}
+.main aside{   /* aside est une division dite de côté, dans un flex est dédié à être sur le côté des autres division de cet même div */
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/* Page d'accueil aside video */
+.video-container{  /* Division qui contient la video */
+    position: relative;     /* position relative a sa position normal */
+	padding-bottom: 56.25%; /* 16:9 */
+    margin-bottom: 4%;  /* marge du bas pour la division, égalise le orange au bas */
+}
+.video-container iframe{   /* iframe est un tag inline video */
+	position: absolute; /* la position est relative a sa position d'origine */
+	width: 100%;    /* 100% de la largeur disponible */
+	height: 100%;   /* 100% de la hauteur disponible */
+}
+/* Page Plan du Site */
+.main-plandusite{
+    margin-top: 8em;
+    margin-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* aligne les items au centre de la page */
+}
+.main-plandusite a{     /* Propriétés du text des liens dans plan du site */
+    font-size: calc(.8em + 1.5vw);
+    background-color: white;
+    color: black;
+    display: block;
+    padding: 12px;  /* padding en px .5em trop gros et je n'aime pas être moins rond que .5 */
+}
+/* Page Faq et À propos */
+main{
+    font-size: calc(.8em + 1.5vw);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+aside ul{   /* Ajoute un padding  pour /galiser le orange au bas de aside */
+    padding-bottom: 2em;
+}
+aside ul li{
+    font-size: calc(1em + .5vw); /* grosseur minimu du text a .8em*/
+}
+/* Page Faq cré un Faq en accordeon */
+.accordeon{    /* */
+    background-color: #eee;
+    color: #444;
+    cursor: pointer; /* modifie le pointeur de la souris en main qui pointe losque au dessus */
+    padding: 18px;
+    width: 100%;
+    border: none;   /* sans lignes de séparation entre chacun */
+    text-align: center;
+    font-size: calc(.8em + .8vw); /* grosseur minimu du text a .8em*/
+    transition: 0.4s; /* vitesse de déploiment du panneau */
+  }
+  .FAQactive, .accordeon:hover{    /* si un choix est fait ou si souris au dessus changer couler */
+    background-color: #ccc; 
+  }
+  .panel{  /* Partie qui se dévelope*/
+    padding: 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  .panel p{     /* text du panneau au centre */
+    text-align: center;
+  }
+  .panel a{ /* couleur du text des liens du panneau */
+      color: black;
+  }
+  .panel a:hover{   /* couleur du text des liens du panneau lorsque souris au dessus */
+    color: red;
+}
+/* main-apropos page à propos */
+.main-apropos{   /* disposition de l'image à gauche 20px plus bas*/
+    padding: 2em; /* espace autour de main-apropos */ 
+}	
+.main-apropos p{   /* Dans la page a propos*/
+    text-align: left;    /* disposition du text à gauche */
+}	
+.main-apropos p img{   /* Dans la page a propos*/
+    float: left;    /* disposition de l'image à gauche 20px plus bas*/
+}	
+/* main-slide page de sites d'intérets */
+.main-slide h3{
+    margin-top: 1.5em;
+    color: black;
+    font-family: Verdana;   /* Change la police du text du titre du slide */
+    font-size: calc(.8em + 1.5vw);
+  }
+  .thumbnails img{ /* Propriétés des miniatures */
+    height: 150px;
+    border: 4px solid #555;
+    padding: 1px;
+    margin: 0 10px 10px 0;
+  }
+  .thumbnails img:hover{   /* couleur du text des liens du panneau lorsque souris au dessus */
+    border: 4px solid #00ccff;
+    cursor:pointer;     /* Pointeur en forme de main */
+  }
+/* ==============
+       Footer
+============== */
+.footer-container{     /* Class du pied de page */
+    width: 100%;     /* 100% de la largeur de la page */
+    bottom: 0;      /* rien sous le footer */
+    overflow: hidden;   /* Si ca dépasse on le cache */
+    height: auto;   /* La hauteur du footer est automatique */
+    margin: auto;   /* La marge du footer est automatique */
+}
+.images{    /* image des comptes Facebook, twitter, Linkedin */
+    display: flex;  /* Disposition des images dans la div */
+    margin-left: 29.4%; /* marge gauche div images des icons média sociaux*/
+    margin-right: 30%;  /* marge droite div images des icons média sociaux*/
+    justify-content: space-between; /* sépare de manière égale les icons média sociaux*/
+    margin-top: 2em;
+}
+.SIimages{  /* Probleme d'alignement dans cette page pour icons médias sociaux (contournement) */
+    display: flex;
+    margin-left: 12%;
+    margin-right: 30%;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+h4{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+}
+h5{
+    font-size: 1em;
+    margin-bottom: 0;   /* Colle cette ligne au bas de la page / footer */
+    color: gray;
+}    
+a{
+    color: white;   /* Couleur du text blanc */
+    text-decoration: none;  /* Pas de underline pour les liens */ 
+}    
+/* ====================
+       CSS3 Effets
+   ==================== */
+     nav ul li,
+     .header-container,
+     .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;  /* boite d'ombre sur les boutons, bas du Header et aside */
+                box-shadow: 0 5px 10px #aaa;
+     }
+/* =====================
+       Menu: active
+===================== */
+a:hover{   /* Le text du bouton devient noir quand souris au dessus */
+    color: black;  
+}
+a:active{  /* Le text du bouton devient vert pendant le clique */
+    top: 1px;   /* illusion d'enfoncement */
+	color: Green;  
+}
+.active{    /* La page active a un text noir dans le bouton du menu */
+    color: black;
+ }
+.main-plandusite a:hover{  /* Page plan du site le text devient rouge quand souris au dessus */
+    color: red;
+}
+.main-plandusite a:active{    /* Sur la page plan du site le text du bouton devient vert pendant le clique */
+    top: 1px;
+	color: green;  
+}
+/* =====================
+   #   Media Queries   #    Adaptivité du contenu du site pour différent format
+   ===================== */
+   @media (min-width:320px){ /* smartphones, iPhone, portrait 480x320 */
+    
+    .main-container aside,
+    .main-container article{
+       
+        width: 100%;   /* Réduit les division sur une colone en prenant 100% de la largeur */
+     }
+     nav ul{     /* Aligne le menu sur une seul colone*/
+         display: block; /* a 480px et moins liste verticale */ 
+         text-align: center; 
+         list-style-type: none;     /* Sans liste à puces, etc*/ 
+         margin-right: 8%;  /* Centre les éléments du main */
+       }
+       nav ul li{
+        background-color: #e44d26;
+        font-size: calc(.8em + 3vw);
+        width: 100%; /* a 480px et moins largeur items a 100% */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+        border-radius: 8px; /* Arrondis les angles des boutons du menu (nav) */
+        padding: 2vw;   /* vw est un mesure en relation avec meta view port (1.0)*/
+        line-height: 1em;   /* Hauteur du bouton */
+       }  
+    .images img{    /* Grandeur adaptive des icons ds médias sociaux */
+        width: 120%;
+        height: auto;
+    } 
+    .preview img{  /* Cache l'apercue des images sur la page de site d'intérets puisque inutile à cette grandeur d'écran */
+        display: none;
+    }
+    main p img{   /* Grandeur adaptive de l'image dans le text de la page À propos */
+        width:60%;
+        height:"auto";
+    }
+    .main article{  /* Enlève le padding de droite pour permettre de centrer */
+        padding-right: 2%;
+    }	
+ }
+ @media (min-width:481px) { /* portrait e-readers (Nook/Kindle),@ 600 or @ 640 wide. */ }
+ @media (min-width:641px) { /* portrait tablets, portrait iPad, paysage e-readers, paysage 800x480 or 854x480 phones */ }
+ @media (min-width:961px) { /* tablet, paysage iPad, basse-res laptops ands desktops */
+/* ==============
+      Wrapper: Emballe les elements pour les disposer d'une facon differente lorsque plus grand que 960px
+============== */
+.wrapper{  /* Dispose du aside à droite des deux autres divisions contenue dans celle-ci */
+    display: flex;
+    flex-direction: row;
+}
+ nav{  /* Disposition de la navbar sur une seul ligne */
+    display: flex;
+    justify-content: center;
+    height: 12em;   /* Hauteur de la navbar*/
+}
+nav ul{
+    width: 100%;    /* Navbar prend 100% de la largeur de la page */
+    display: flex;
+    margin: auto;   /* Marge automatique */
+    padding: 0;
+    justify-content: center;   
+}
+nav ul li{
+    font-size: 1.5vw;
+    width: 11%; /* Chacun des boutons prend 11% de la largeur de page */
+    margin: .5em;
+    padding: 0vw;
+    line-height: 2em;   /* Hauteur du bouton */
+}
+.preview img{
+    display: table;
+    border: 4px solid #444;
+    padding: 1px;
+    width: 600px;
+  }
+main p img{   /* Propriétés image À propos */
+    width: 30%;
+    height:"auto";
+    margin-right: 2em;
+}	
+.images img{    /* Grosseur des icons des médias sociaux */
+    width: 150%;
+    height: auto;
+} 
+ }/*(961px)*/
+ @media (min-width:1025px) { /* Paysage tablets, laptops, et desktops */ }
+ @media (min-width:1281px) { /* haute-res laptops et desktops */ }
+
+
+

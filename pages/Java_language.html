@@ -1,0 +1,96 @@
+<!Doctype html>		<!-- Specifie la version du code HTML5 au navigateur web -->
+<html lang="fr">	<!-- Specifie le language pour le navigateur web -->
+ 	<head>	<!-- Contient les metadonnees du code HTML-->
+		<meta charset="utf-8" />	<!-- Specifie l'encodage des caracteres en utf-8 -->
+		<link rel="stylesheet" href= "../css/style.css" />		<!-- Lien vers le code css3 -->
+		<title>Tchiconag86-Java</title>	<!-- Nom de l'onglet a afficher -->
+		
+		<!-- Script Java (Sound-Moushover.js) -->
+		<script type="text/javascript" src="../scripts/sound-mouseover.js"></script>
+	 </head>
+
+	<body>
+	
+        <div class="header-container">	<!-- Les classes permettent de dupliquer des elements de style -->
+            <header>
+			<h1>La programmation !</h1>
+			<nav>	<!-- Liens de navigation -->
+				<ul>	<!-- UL=Liste sans ordre, LI=Element d'une liste, a=Hyperlien, href=URL -->
+					<li> <a href="../index.html" onmouseover="playclip();">Accueil</a> </li>
+                    <!-- Mes pages -->
+					<li> <a href="../Pages/Types.html" onmouseover="playclip();">Types</a> </li>
+					<li> <a href="../Pages/C_language.html" onmouseover="playclip();">C, C#, C++</a> </li>
+					<li> <a href="../Pages/Java_language.html" class="active" onmouseover="playclip();">Java</a> </li>
+					<li> <a href="../Pages/PHP_language.html" onmouseover="playclip();">Php</a> </li>
+					<li> <a href="../Pages/Python_language.html" onmouseover="playclip();">Python</a> </li>
+                    <!-- Pages Obligatoires pour le travail -->
+					<li> <a href="../Pages/SitesDinterets.html" onmouseover="playclip();">Sites d'interets</a> </li>
+					<li> <a href="../Pages/FAQ.html" onmouseover="playclip();">Faq</a> </li>
+					<li> <a href="../Pages/aPropos.html" onmouseover="playclip();">À propos</a> </li>
+				</ul>
+			</nav>
+			</header>
+		</div>	
+			
+			
+		<div class="main-container">	<!-- main-container est le nom donne a cette classe -->
+            <div class="main wrapper clearfix">
+                <article>	<!-- semantique -->
+                    <section>	<!-- semantique -->
+                        <h2>article section h1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+				</article>
+				<aside>
+                    <h3>aside</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                </aside>
+            </div> 
+        </div> <!-- #main-container -->
+
+
+        <div class="footer-container">
+            <footer>
+				<div class="images">
+					<!-- Twitter -->
+					<a href="https://twitter.com/gervaisnicolas2">	<!-- Lien du profile (image) -->
+						<img src="../images/Twitter30.png" alt="Twitter">	<!-- lien de l'image -->
+					</a>												<!-- img est un tag qui dit que cest une image -->
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/nicolasandre.gervais">	<!-- Lien du profile (image) -->
+						<img src="../images/Facebook30.png" alt="Facebook">	<!-- lien de l'image -->
+					</a>													<!-- src specifie l'url -->
+					<!-- Linkedin -->
+					<a href="https://www.linkedin.com/in/nicolas-gervais-848344193/">	<!-- Lien du profile (image) -->
+						<img src="../images/Linkedin30.png" alt="Linkedin">	<!-- lien de l'image -->
+					</a>
+				</div>
+				<div class="Contact-PlanDuSite">
+					<nav>
+						<ul>
+							<li><a href="mailto:tchiconag@gmail.com?subject=Help on Tchiconag86">	<!-- Lien du Email -->
+								Contactez-nous	<!-- Text du lien -->
+							</a></li>
+							<li> <a href="../Pages/PlanDuSite.html">plan du site</a> </li>
+						</ul>
+					</nav>
+				</div>
+					<h4>Supporté par : <br>	<!-- br est un saut de ligne -->
+						Chrome, Opéra, Edge et FireFox</h4>
+					<h5>Tchiconag86 inc 02/20</h5>
+			</footer>	
+    	</div>
+
+		<audio>
+           <source src="../audio/click.mp3">	<!-- Chemin source du ficher audio -->
+           <source src="../audio/click.ogg">	<!-- ogg est un fichier audio pour firefox et opera doit etre converti en ogg -->
+		</audio>
+        <div id="sounddiv">
+			<bgsound id="sound">	<!-- Code audio pour IE avant version 9 -->
+		</div> 		
+	</body>
+</html>
