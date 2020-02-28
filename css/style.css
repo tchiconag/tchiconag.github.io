@@ -238,8 +238,8 @@ a:active{  /* Le text du bouton devient vert pendant le clique */
    ===================== */
    @media (min-width:320px){ /* smartphones, iPhone, portrait 480x320 */
     .main-container{
-        display: flex;
-        flex-direction: column;
+        display: block;
+        
     }
     .main-container aside,
     .main-container article{
