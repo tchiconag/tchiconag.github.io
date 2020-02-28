@@ -175,6 +175,14 @@ aside ul li{
     height: auto;   /* La hauteur du footer est automatique */
     margin: auto;   /* La marge du footer est automatique */
 }
+.footer-container-plan{     /* Class du pied de page */
+    width: 100%;     /* 100% de la largeur de la page */
+    position: absolute; /* rien sous le footer */
+    bottom: 0;      /* rien sous le footer */
+    overflow: hidden;   /* Si ca dépasse on le cache */
+    height: auto;   /* La hauteur du footer est automatique */
+    margin: auto;   /* La marge du footer est automatique */
+}
 .images{    /* image des comptes Facebook, twitter, Linkedin */
     display: flex;  /* Disposition des images dans la div */
     margin-left: 29.4%; /* marge gauche div images des icons média sociaux*/
@@ -237,10 +245,6 @@ a:active{  /* Le text du bouton devient vert pendant le clique */
    #   Media Queries   #    Adaptivité du contenu du site pour différent format
    ===================== */
    @media (min-width:320px){ /* smartphones, iPhone, portrait 480x320 */
-    .main-container{
-        display: block;
-        
-    }
     .main-container aside,
     .main-container article{
         width: 100%;   /* Réduit les division sur une colone en prenant 100% de la largeur */
