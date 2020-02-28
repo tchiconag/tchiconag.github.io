@@ -166,6 +166,7 @@ aside ul li{
     overflow: hidden;   /* Si ca dépasse on le cache */
     height: auto;   /* La hauteur du footer est automatique */
     margin: auto;   /* La marge du footer est automatique */
+    margin-bottom: 0;
 }
 .footer-container-faq{     /* Class du pied de page */
     width: 100%;     /* 100% de la largeur de la page */
@@ -174,6 +175,7 @@ aside ul li{
     overflow: hidden;   /* Si ca dépasse on le cache */
     height: auto;   /* La hauteur du footer est automatique */
     margin: auto;   /* La marge du footer est automatique */
+    margin-bottom: 0;
 }
 .images{    /* image des comptes Facebook, twitter, Linkedin */
     display: flex;  /* Disposition des images dans la div */
