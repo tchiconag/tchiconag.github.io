@@ -74,19 +74,18 @@ h1{ /* h est une balise de titre et le nombre permet plusieur caractéristiques 
 }
 /* Page Plan du Site */
 .main-plandusite{
-    margin-top: 8em;
-    margin-bottom: 8em;
+    margin-top: 10em;
+    margin-bottom: 10em;
     display: flex;
     flex-direction: column;
     align-items: center;    /* aligne les items au centre de la page */
-    height: auto;
 }
 .main-plandusite a{     /* Propriétés du text des liens dans plan du site */
     font-size: calc(.8em + 1.5vw);
     background-color: white;
     color: black;
     display: block;
-    padding: 12px;  /* padding en px .5em trop gros et je n'aime pas être moins rond que .5 */
+    padding: 30px;  /* padding en px .5em trop gros et je n'aime pas être moins rond que .5 */
 }
 /* Page Faq et À propos */
 main{
