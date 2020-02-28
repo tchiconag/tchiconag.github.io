@@ -30,7 +30,7 @@ h1{ /* h est une balise de titre et le nombre permet plusieur caractéristiques 
 }
 .header-container,
 .footer-container,
-.footer-container-faq
+.footer-container-faq,
 .main aside{
     background: #f16529;    /* La couleur de fond de ces trois division est orange */
 }
