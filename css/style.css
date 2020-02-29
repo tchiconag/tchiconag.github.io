@@ -25,6 +25,7 @@ h1{ /* h est une balise de titre et le nombre permet plusieur caractéristiques 
        Mixe .containers
 ========================== */
 .footer-container, /* cette formulation associe plusieur class */
+.footer-container-faq,
 .main aside{
     border-top: 20px solid #e44d26;     /* Bordure orange au haut pied de page et de la division "aside" */
 }
@@ -172,7 +173,6 @@ footer{
 }
 .footer-container-faq{     /* Class du pied de page */
     width: 100%;     /* 100% de la largeur de la page */
-    position: absolute; /* rien sous le footer */
     bottom: 0;      /* rien sous le footer */
     overflow: hidden;   /* Si ca dépasse on le cache */
     height: auto;   /* La hauteur du footer est automatique */
