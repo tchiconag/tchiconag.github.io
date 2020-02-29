@@ -173,6 +173,7 @@ footer{
 }
 .footer-container-faq{     /* Class du pied de page */
     width: 100%;     /* 100% de la largeur de la page */
+    position: relative;
     bottom: 0;      /* rien sous le footer */
     overflow: hidden;   /* Si ca dépasse on le cache */
     height: auto;   /* La hauteur du footer est automatique */
