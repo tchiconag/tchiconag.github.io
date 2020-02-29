@@ -177,7 +177,8 @@ footer{
     bottom: 0;      /* rien sous le footer */
     overflow: hidden;   /* Si ca dépasse on le cache */
     height: auto;   /* La hauteur du footer est automatique */
-    margin: auto;   /* La marge du footer est automatique */
+    margin: 0;   /* La marge du footer est automatique */
+    
 }
 .images{    /* image des comptes Facebook, twitter, Linkedin */
     display: flex;  /* Disposition des images dans la div */
